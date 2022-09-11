@@ -20,9 +20,13 @@ const Home = () => {
           data?.map((item) => {
             return (
               <div key={item.show.id}>
-                <h2>{item.show.name}</h2>
-                <p>{`Rating: ${item.show.rating.average}`}</p>
-                <Card />
+                <Card
+                  img={item.show.image.medium}
+                  name={item.show.name}
+                  language={item.show.language}
+                  genres={item.show.genres[0]}
+                  rating={item.show.rating.average}
+                />
               </div>
             );
           })}
