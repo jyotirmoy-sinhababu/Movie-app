@@ -1,8 +1,15 @@
 import React from 'react';
 import Modal from '../../components/modal/Modal';
+import { useState } from 'react';
 import Poster from '../poster/Poster';
 
 const Card = ({ img, name, rating, language, genres }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div>
       <div>
@@ -16,8 +23,8 @@ const Card = ({ img, name, rating, language, genres }) => {
         <button>More info?</button>
       </div>
       <div>
-        <Modal>
-          <Poster  />
+        <Modal isOpen={isOpen}>
+          <Poster />
         </Modal>
       </div>
     </div>
