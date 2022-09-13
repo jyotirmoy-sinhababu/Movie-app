@@ -26,6 +26,9 @@ const Home = () => {
                   language={item.show.language}
                   genres={item.show.genres[0]}
                   rating={item.show.rating.average}
+                  url={item.show.url}
+                  summary={item.show.summary}
+                  imgSecond={item.show.image.original}
                 />
               </div>
             );

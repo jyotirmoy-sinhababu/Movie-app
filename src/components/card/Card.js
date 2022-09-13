@@ -3,7 +3,16 @@ import Modal from '../../components/modal/Modal';
 import { useState } from 'react';
 import Poster from '../poster/Poster';
 
-const Card = ({ img, name, rating, language, genres }) => {
+const Card = ({
+  img,
+  name,
+  rating,
+  language,
+  genres,
+  url,
+  summary,
+  imgSecond,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -20,11 +29,19 @@ const Card = ({ img, name, rating, language, genres }) => {
         <p>Rating:{rating}</p>
         <p>Language:{language}</p>
         <p>Genres:{genres}</p>
-        <button>More info?</button>
+        <button onClick={openModal}>More info?</button>
       </div>
       <div>
         <Modal isOpen={isOpen}>
-          <Poster />
+          <Poster
+            name={name}
+            rating={rating}
+            language={language}
+            genres={genres}
+            url={url}
+            summary={summary}
+            imgSecond={imgSecond}
+          />
         </Modal>
       </div>
     </div>
