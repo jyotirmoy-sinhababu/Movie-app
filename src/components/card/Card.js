@@ -30,9 +30,11 @@ const Card = ({
         <p className='card-rating'>Rating:{rating}</p>
         <p className='card-language'>Language:{language}</p>
         <p className='card-genres'>Genres:{genres}</p>
-        <button className='info-btn' onClick={openModal}>
-          More info?
-        </button>
+        <div className='info-btn-ctn'>
+          <button className='info-btn' onClick={openModal}>
+            More info?
+          </button>
+        </div>
       </div>
       <div>
         <Modal isOpen={isOpen}>
