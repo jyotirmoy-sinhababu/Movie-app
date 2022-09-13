@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from '../../components/modal/Modal';
 import { useState } from 'react';
 import Poster from '../poster/Poster';
+import './card.css';
 
 const Card = ({
   img,
@@ -21,15 +22,17 @@ const Card = ({
 
   return (
     <div>
-      <div>
-        <div>
+      <div className='card-body'>
+        <div className='card-img-cnt'>
           <img className='image' src={img} alt='movie poster' />
         </div>
-        <p>{name}</p>
-        <p>Rating:{rating}</p>
-        <p>Language:{language}</p>
-        <p>Genres:{genres}</p>
-        <button onClick={openModal}>More info?</button>
+        <p className='card-name'>{name}</p>
+        <p className='card-rating'>Rating:{rating}</p>
+        <p className='card-language'>Language:{language}</p>
+        <p className='card-genres'>Genres:{genres}</p>
+        <button className='info-btn' onClick={openModal}>
+          More info?
+        </button>
       </div>
       <div>
         <Modal isOpen={isOpen}>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from '../../components/card/Card';
+import './home.css';
 
 const Home = () => {
   const [data, setData] = useState('');
@@ -15,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <div className='home-body'>
         {data &&
           data?.map((item) => {
             return (
