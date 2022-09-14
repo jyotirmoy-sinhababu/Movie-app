@@ -57,7 +57,7 @@ const Card = ({
         </div>
       </div>
       <div>
-        <Modal isOpen={isOpen}>
+        <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
           <Poster
             name={name}
             rating={rating}

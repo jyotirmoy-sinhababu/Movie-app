@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.poster-cnt {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.img-cnt {
+  height: 950px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-poster {
+  height: 950px;
+  width: fit-content;
+  max-width: 700px;
+}
+
+.poster-info {
+  height: 950px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.poster-name,
+.info {
+  color: antiquewhite;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.summary-info {
+  display: flex;
+  padding: 25px;
+}
