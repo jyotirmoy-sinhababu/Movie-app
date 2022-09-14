@@ -1,4 +1,30 @@
 .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 15px;
+  background-color: rgb(60, 58, 58);
+  gap: 5px;
+}
+
+.image {
+  border-radius: 8px;
+}
+
+.card-name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(222, 143, 24);
+}
+
+.info-btn {
+  background: transparent;
+  width: 75px;
+  height: 29px;
+  background-color: rgb(236, 208, 115);
+  border-radius: 4px;
+  border: none;
 }
