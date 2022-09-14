@@ -30,7 +30,13 @@
   height: fit-content;
   background: transparent;
   color: red;
-  font-size: 1.8rem;
   border: none;
   cursor: pointer;
+  width: 29px;
+  height: 29px;
+}
+
+.bi-bi-x {
+  width: 44px;
+  height: 44px;
 }
