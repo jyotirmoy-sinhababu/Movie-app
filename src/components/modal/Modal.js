@@ -5,7 +5,11 @@ const Modal = ({ isOpen, children, setIsOpen }) => {
   if (!isOpen) return null;
   return ReactDOM.createPortal(
     <div className='modal-design'>
-      <button onClick={() => setIsOpen(false)}>X</button>
+      <div className='close-btn'>
+        <button className='x-btn' onClick={() => setIsOpen(false)}>
+          X
+        </button>
+      </div>
       {children}
     </div>,
     document.getElementById('portal')
